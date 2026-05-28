@@ -238,8 +238,6 @@ The community created a Solana token around this project. You can burn $avoid to
 |---|---|
 | Web App | [avoid-ai-writing-app.vercel.app](https://avoid-ai-writing-app.vercel.app) |
 | DexScreener | [dexscreener.com/solana/4b5m...](https://dexscreener.com/solana/4b5mprekzapcwybrsbbaiewtk4amck62rpcznjcxz69m) |
-| Telegram | [t.me/avoidaiwriting](https://t.me/avoidaiwriting) |
-| X Community | [x.com/i/communities/2036440377356591415](https://x.com/i/communities/2036440377356591415) |
 | CA | `BsidWuYJnayqMXVsLGr34524vmZ1BrWFhPer3198pump` |
 
 ## Credits
