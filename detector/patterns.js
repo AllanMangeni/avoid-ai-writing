@@ -230,6 +230,11 @@ const AIDetector = (() => {
     'exceptional', 'exceptionally', 'remarkable', 'remarkably',
     'sophisticated', 'instrumental',
     'world-class', 'state-of-the-art', 'best-in-class',
+    // `verbatim` is usually redundant with the verb it modifies ("copies X
+    // verbatim" = "copies X"). It has a genuine term-of-art sense in legal,
+    // research, and QA registers ("verbatim transcript"), so it lives at Tier 3:
+    // density-gated, it only fires on overuse, not on a single legitimate use.
+    'verbatim',
   ];
 
   // Multi-word Tier 3 phrases. Density-gated like single Tier 3 words because
