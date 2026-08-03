@@ -357,6 +357,31 @@ documentation with this repo's detector and publishes the result, including two
 defects the scan found in our own work. `npm run self-scan` reproduces it, and
 CI fails when a document drifts past its budget.
 
+## House style is a different job
+
+This skill removes AI-writing tells. It doesn't enforce a house style guide, and
+it ships no style guides of its own. There's no `--style` input. If you want
+house style applied in the same pass, put the guide in your agent's context
+alongside a [voice profile](#triggering-the-skill) and it should follow both,
+as instructions rather than as a checked rule set.
+
+If you want Google, Microsoft, Red Hat, or Salesforce style checked in CI,
+[Vale](https://github.com/vale-cli/vale) already covers that. Its
+[package registry](https://github.com/vale-cli/packages) carries
+Vale-compatible implementations of those four, alongside ports of `proselint`,
+`write-good`, and `alex`. The four style-guide packages are MIT-licensed, though
+the guides they implement are not always (see the audit below); the linter ports
+vary, and proselint's is BSD-3-Clause. The two tools do different jobs and
+compose: Vale gates a document against a rule set, applying fixes one alert at a
+time, while this skill rewrites whole passages as you draft.
+
+Paywalled guides (Chicago, APA, MLA, AP) have no machine-readable
+implementation here or in Vale, and won't get one here. Nothing in this repo
+could verify that a rewrite is Chicago-compliant, so claiming it would fail the
+same bar [`PROOF.md`](./PROOF.md) holds every other number to. The
+[license audit](https://github.com/conorbronsdon/avoid-ai-writing/issues/88)
+behind that line is public.
+
 ## Credits
 
 Pattern research informed by:
